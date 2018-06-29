@@ -16,6 +16,7 @@ console.log('<'+insideInput);
 
 function numberInsideInput(event){
  var insideInput = number.value;
+  var insideInputNumber = parseInt(insideInput);
  console.log('<'+insideInput);
 }
 
@@ -37,4 +38,5 @@ function compareNumber(){
     clues.innerHTML = 'Demasiado alto';
   }
 }
-compareNumber();
+
+button.addEventListener('click',compareNumber);
