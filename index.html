@@ -2,19 +2,21 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Autoevaluación intermedia 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
-  <body>
-	<h1>Adivina el número</h1>
-	<h2>Introduce aquí tu número</h2>
-	<input id="number" class="number" type="number" name="number" value="42">
-	<button class="testButton" type="button" name="button">Prueba</button>
-	<div class="clues">
+  <body class="body">
+	<h1 class="title">Adivina el número</h1>
+  <label class="indication" for="number">Introduce aquí tu número</label>
+	<input id="number" class="number number-box" type="number" name="number" value="42">
+	<button class="testButton test-btn" type="button" name="button">Prueba</button>
+	<div class="clues clues-box clues-text">
 		Escribe un número y dale a Prueba
 	</div>
-	<div class="tries">
+	<div class="tries tries-box tries-text">
 		0
-
 	</div>
 
     <script type="text/javascript" src="./js/main.js"></script>

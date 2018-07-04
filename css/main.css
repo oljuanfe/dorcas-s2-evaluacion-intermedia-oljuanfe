@@ -1,2 +1,54 @@
+@charset "UTF-8";/*Colores*//*Fuentes*//*Pesos fuentes*//*Tamaño fuentes*/* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clues-text {
+  color: blue;
+}
+
+.tries-text {
+  color: red;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.tries-box {
+  position: absolute;
+  top: 10vh;
+  right: 10vh;
+}
+
+.body {
+  height: 100vh;
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  background-color: lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.clues-box {
+  width: 80%;
+  padding: 10px;
+  display: block;
+  border: 2px solid blue;
+  text-align: center;
+}
 
 /*# sourceMappingURL=main.css.map */

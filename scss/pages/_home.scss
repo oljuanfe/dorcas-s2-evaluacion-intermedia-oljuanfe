@@ -1,0 +1,22 @@
+@import 'layout/counter';
+
+.body {
+  height: 100vh;
+  font-family: $font-primary;
+  font-weight: $weigth-regular;
+  font-size: $size-m;
+  color: $color-secondary;
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clues-box {
+  width: 80%;
+  padding: 10px;
+  display: block;
+  border: 2px solid $color-terciary;
+  text-align: center;
+}
