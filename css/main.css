@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+input {
+  border: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+}
+
 .clues-text {
   color: blue;
 }
@@ -13,6 +24,14 @@
   color: red;
   font-size: 50px;
   font-weight: 600;
+}
+
+.test-btn {
+  background-color: white;
+  border-radius: 2px;
+  margin: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .tries-box {
