@@ -2,29 +2,31 @@
 
 console.log('>> Ready :)');
 
-function getRandomNumber(max) {
-  return Math.ceil(Math.random() * max);
-}
-
-// console.log('> ' + getRandomNumber(100));
-//Obtener numero aleatorio y guardarlo en variable
-
-var randomNumber = getRandomNumber(100);
-console.log(randomNumber);
-
-//Apuntar hacia el boton y el input
+//Apuntar hacia el boton, el input, las pistas y los intentos
 
 var button = document.querySelector('.testButton');
 var number = document.querySelector('.number');
 var clues = document.querySelector('.clues');
 var tries = document.querySelector('.tries');
+
+//Variable contador a 0
+
 var counter = 0;
-// var insideInputAsAString = number.value;
-//  var insideInput = parseInt(insideInputAsAString);
-//  console.log('1<<<'+insideInput);
+
+
+//Funcion para obtener numero aleatorio
+
+function getRandomNumber(max) {
+  return Math.ceil(Math.random() * max);
+}
+
+//Obtener numero aleatorio y guardarlo en variable
+
+var randomNumber = getRandomNumber(100);
+console.log(randomNumber);
 
 //Funcion para comparar numero aleatorio con numero input
-//pongo recogida de input dentro funcion para que compare nuevo numero nuevo cada vez que se ejecute
+//pongo recogida de input dentro funcion para que compare numero nuevo cada vez que se ejecute
 
 function compareNumber(){
   var insideInputAsAString = number.value;
@@ -39,34 +41,26 @@ function compareNumber(){
     clues.innerHTML = 'Demasiado alto';
     console.log('Demasiado alto');
   }
-  console.log('funcion comparar');
 }
 
 //Contador de intentos
+
 function counterTries (){
   counter = counter + 1;
   console.log(counter);
   tries.innerHTML = counter;
 }
 
-//Funcion para guardar el valor introducido en input
+//Funcion principal juego que contiene las otras funciones
 
-function numberInsideInput(event){
- // var insideInputAsAString = number.value;
- //  var insideInput = parseInt(insideInputAsAString);
-  // console.log('1<<<'+insideInput);
+function game(event){
   compareNumber();
   counterTries();
 }
 
-//Evento click cuando metemos valor input
+//Evento click cuando clickamos boton
 
-button.addEventListener('click',numberInsideInput);
-
-// var insideInput =number.value;
-//
-// console.log('3<'+insideInput);
+button.addEventListener('click',game);
 
 
-//
-// button.addEventListener('click',compareNumber);
+//Fin
