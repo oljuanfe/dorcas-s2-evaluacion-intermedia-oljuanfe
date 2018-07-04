@@ -17,7 +17,8 @@ console.log(randomNumber);
 var button = document.querySelector('.testButton');
 var number = document.querySelector('.number');
 var clues = document.querySelector('.clues');
-
+var tries = document.querySelector('.tries');
+var counter = 0;
 // var insideInputAsAString = number.value;
 //  var insideInput = parseInt(insideInputAsAString);
 //  console.log('1<<<'+insideInput);
@@ -41,6 +42,13 @@ function compareNumber(){
   console.log('funcion comparar');
 }
 
+//Contador de intentos
+function counterTries (){
+  counter = counter + 1;
+  console.log(counter);
+  tries.innerHTML = counter;
+}
+
 //Funcion para guardar el valor introducido en input
 
 function numberInsideInput(event){
@@ -48,6 +56,7 @@ function numberInsideInput(event){
  //  var insideInput = parseInt(insideInputAsAString);
   // console.log('1<<<'+insideInput);
   compareNumber();
+  counterTries();
 }
 
 //Evento click cuando metemos valor input
