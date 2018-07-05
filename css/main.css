@@ -16,6 +16,15 @@ button {
   border: 0;
 }
 
+.title-text {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.test-btn-text {
+  font: 600 14px "Open Sans", arial, sans-serif;
+}
+
 .clues-text {
   color: blue;
 }
@@ -34,10 +43,16 @@ button {
   padding-right: 20px;
 }
 
+.number-box {
+  margin-top: 15px;
+  padding-left: 10px;
+  height: 20px;
+}
+
 .tries-box {
   position: absolute;
-  top: 10vh;
-  right: 10vh;
+  top: 5vh;
+  right: 5vh;
 }
 
 .body {
@@ -62,12 +77,19 @@ button {
   align-items: center;
 }
 
+.title {
+  text-align: center;
+  position: absolute;
+  top: 15vh;
+}
+
 .clues-box {
   width: 80%;
   padding: 10px;
-  display: block;
   border: 2px solid blue;
   text-align: center;
+  position: absolute;
+  bottom: 10vh;
 }
 
 /*# sourceMappingURL=main.css.map */
